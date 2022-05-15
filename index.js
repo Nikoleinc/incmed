@@ -1,5 +1,5 @@
 let isMenuOpen = false;
-
+/* FUNCTION: to show and hide dropdown menu - see document for all the references */
 function onMenuClick() {
     if (isMenuOpen) {
         isMenuOpen = false;
@@ -10,8 +10,9 @@ function onMenuClick() {
     }
 }
 
+/* FUNCTION: to alert user when form is submitted - see document for all the references */
 function submitForm() {
-    const wounddressing = document.getElementById("wounddressing").checked;
+    const wounddressing = document.getElementById("wounddressing").checked;  //declaring variable using constant
     const woundundressing = document.getElementById("woundundressing").checked;
     const sutureremoval = document.getElementById("sutureremoval").checked;
     const staplesremoval = document.getElementById("staplesremoval").checked;
@@ -21,7 +22,8 @@ function submitForm() {
     const phonenumber = document.getElementById("phonenumber").value;
     const message = document.getElementById("message").value;
 
-    let formtext = "Services selected:\n";
+
+    let formtext = "Services selected:\n"; //declaring variable using let 
     if (wounddressing) {
         formtext = formtext + "- Wound Dressing\n";
     }
@@ -35,6 +37,7 @@ function submitForm() {
         formtext = formtext + "- Staples Removal\n";
     }
 
+    //assign values
     formtext = formtext + "\n"
     formtext = formtext + "Full Name: " + fullname + "\n";
     formtext = formtext + "Email: " + email + "\n";
@@ -46,5 +49,5 @@ function submitForm() {
         + "\n"
         + "Our staff will be in contact with you to discuss your query or to arrange an appointment."
 
-    alert(dialogmessage);
+    alert(dialogmessage); //alert box
 }

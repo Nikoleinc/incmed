@@ -188,7 +188,7 @@ body {
 
 
 
-/*HOMEPAGE STYLING - SPECIFICALLY FOR THIS PAGE ONLY*/
+/*HOMEPAGE STYLES - SPECIFICALLY FOR THIS PAGE ONLY*/
 .homepage {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -281,7 +281,6 @@ body {
 
 
 /* homeepage features */
-
 .homepage .features {
     display: grid;
     gap: 24px 0px;
@@ -356,7 +355,6 @@ body {
 }
 
 .homepage #servicescontainer #servicetitle {
-    /* grid-area: servicetitle; */
     font-family: 'Arial';
     font-size: 35pt;
     color: white;
@@ -391,8 +389,7 @@ body {
 
 
 
-/*ABOUT US STYLING - SPECIFICALLY FOR THIS PAGE ONLY*/
-
+/*ABOUT US STYLES - SPECIFICALLY FOR THIS PAGE ONLY*/
 #aboutus {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -491,8 +488,7 @@ body {
 
 
 
-/*CONTACT PAGE STYLING - SPECIFICALLY FOR THIS PAGE ONLY*/
-
+/*CONTACT PAGE STYLES - SPECIFICALLY FOR THIS PAGE ONLY*/
 #contact {
     display: grid;
     grid-auto-flow: row;
@@ -535,7 +531,7 @@ body {
     background-color: var(--hover-color);
 }
 
-/* Tablet styles */
+/* TABLET STYLES */
 @media only screen and (min-width: 768px) {
     .navigation .logoandmenu .img-inc-logo {
         width: 40%;
@@ -625,7 +621,7 @@ body {
     }
 }
 
-/* Deskop styles */
+/* DESKTOP STYLES */
 @media only screen and (min-width: 992px) {
     .homepage .header .headertext h1 {
         font-size: 52px;
