@@ -1,0 +1,819 @@
+/* STYLE FOR ALL PAGES */
+:root {
+    --gray-bg-color: #F2F2F2;
+    --blue-bg-color: #0D47A1;
+    --hover-color: #0066ff;
+}
+
+/* Remove initial padding and margin set by the browser */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+    -webkit-tap-highlight-color: white;
+}
+
+/* navigation style */
+.navigation {
+    grid-area: navigation;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.navigation .logoandmenu .img-inc-logo {
+    width: 50%;
+}
+
+.navigation .logoandmenu {
+    display: flex;
+    padding: 8px;
+}
+
+.menuicon {
+    width: 24px;
+}
+
+#menubutton {
+    margin-left: auto;
+    padding: 16px;
+}
+
+#menuitems {
+    list-style: none;
+    padding-left: 10px;
+    display: none;
+}
+
+#menuitems li {
+    padding: 10px 0;
+}
+
+#menuitems li a {
+    color: black;
+    text-decoration: none;
+}
+
+#menuitems li a:hover {
+    color: var(--hover-color);
+}
+
+
+/* footer */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "footerone footerthree"
+        "footerone footerthree"
+        "footertwo footerthree"
+        "footertwo footerthree";
+    grid-area: footer;
+    background-color: var(--gray-bg-color);
+    margin-top: 24px;
+    padding: 12px;
+}
+
+.footerone {
+    grid-area: footerone;
+    padding: 0 10px;
+    border-right: solid 1px lightgray;
+}
+
+.footerone .contactdetails .contactdetails-img {
+    vertical-align: middle;
+}
+
+.footerone #incmed-text {
+    width: 80%;
+}
+
+.footerone #img-icon-phone {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
+
+
+.footerone #img-icon-email {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
+
+.footerone p {
+    font-family: 'Open Sans';
+    font-size: 10pt;
+}
+
+.footerone .button-footer {
+    background-color: #2D31FA;
+    border-radius: 100px;
+    padding: 10px 16px;
+    font-size: 12px;
+    font-family: 'Open Sans';
+    color: white;
+    border: none;
+}
+
+.footerone .button-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerone .button-footer a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.footerone .button-footer:hover {
+    background-color: var(--hover-color);
+}
+
+.footertwo {
+    border-right: solid 1px lightgray;
+    padding: 24px 10px 0px 10px;
+}
+
+.footertwo h5 {
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+.footertwo .links {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0px;
+}
+
+.footertwo .links li {
+    font-size: 10pt;
+    padding-top: 5px;
+}
+
+.footerthree {
+    grid-area: footerthree;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.footerthree h5 {
+    font-family: 'Open Sans';
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.footerthree .openinghours {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.footerthree .openinghours li {
+    font-family: 'Open Sans';
+    font-size: 10pt;
+    padding: 5px 0px;
+}
+
+.footerthree .openinghours li p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+/*HOMEPAGE STYLING - SPECIFICALLY FOR THIS PAGE ONLY*/
+.homepage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "navigation navigation navigation"
+        "header header header"
+        "features features features"
+        "servicescontainer servicescontainer servicescontainer"
+        "footer footer footer";
+}
+
+
+
+/* homepage header */
+.homepage .header {
+    grid-area: header;
+    position: relative;
+    text-align: center;
+}
+
+.homepage .header .headerimage img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.homepage .header .headertext {
+    grid-area: headertext;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.homepage .headertext h1 {
+    font-family: 'Arial';
+    font-size: 20pt;
+    color: #FFFFFF;
+}
+
+.homepage .headertext h2 {
+    font-family: 'Open Sans';
+    font-size: 12pt;
+    color: #FFFFFF;
+}
+
+.homepage .headertext .headerinfo {
+    background: white;
+    padding: 16px;
+}
+
+.homepage .headertext p {
+    font-family: 'Open Sans';
+    font-size: 10pt;
+}
+
+.homepage .headertext .button-header {
+    background-color: #2D31FA;
+    border-radius: 100px;
+    padding: 12px 16px;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: white;
+    border: none;
+}
+
+.homepage .headertext .button-header:hover {
+    background-color: var(--hover-color);
+}
+
+.homepage .headertext .button-header a {
+    text-decoration: none;
+    color: white;
+}
+
+.homepage .headertext .button-header a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* homeepage features */
+
+.homepage .features {
+    display: grid;
+    gap: 24px 0px;
+    grid-template-areas:
+        "featuresone"
+        "featurestwo"
+        "featuresthree"
+        "featuresfour";
+    grid-area: features;
+    margin: 24px;
+}
+
+.homepage .features .feature img {
+    width: 70px;
+    height: 70px;
+}
+
+.homepage .features .feature {
+    background-color: var(--gray-bg-color);
+    padding: 24px;
+    text-align: center;
+}
+
+.homepage .featuresone {
+    grid-area: featuresone;
+}
+
+.homepage .featurestwo {
+    grid-area: featurestwo;
+}
+
+.homepage .featuresthree {
+    grid-area: featuresthree;
+}
+
+.homepage .featuresfour {
+    grid-area: featuresfour;
+}
+
+
+.homepage .features h1 {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14pt;
+}
+
+.homepage .features p {
+    font-family: 'Open Sans';
+    font-weight: auto;
+    font-size: 12pt;
+}
+
+
+
+/* homepage services */
+.homepage #servicescontainer {
+    grid-area: servicescontainer;
+
+    background-color: var(--blue-bg-color);
+    font-family: 'Open Sans';
+    padding: 12px 30px 40px 30px;
+}
+
+.homepage #servicescontainer img {
+    width: 150px;
+    height: 150px;
+}
+
+.homepage #servicescontainer .services .service {
+    padding: 24px;
+    text-align: center;
+}
+
+.homepage #servicescontainer #servicetitle {
+    /* grid-area: servicetitle; */
+    font-family: 'Arial';
+    font-size: 35pt;
+    color: white;
+    text-align: center;
+}
+
+.homepage #servicescontainer .services {
+    display: grid;
+    gap: 24px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "serviceone"
+        "servicetwo";
+}
+
+.homepage #servicescontainer h2 {
+    font-size: 22px;
+}
+
+.homepage .serviceone {
+    background-color: #FFFFFF;
+    grid-area: serviceone;
+    font-size: 16px;
+}
+
+.homepage .servicetwo {
+    background-color: #FFFFFF;
+    grid-area: servicetwo;
+    font-size: 16px;
+}
+
+
+
+
+/*ABOUT US STYLING - SPECIFICALLY FOR THIS PAGE ONLY*/
+
+#aboutus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "navigation navigation"
+        "title title"
+        "image image"
+        "history history"
+        "practitioners practitioners"
+        "footer footer";
+}
+
+#aboutus .title {
+    grid-area: title;
+    font-family: Arial;
+    background-color: var(--gray-bg-color);
+    text-align: center;
+}
+
+#aboutus .image-aboutus {
+    grid-area: image;
+}
+
+#img-aboutus {
+    width: 100%;
+    height: 400px;
+}
+
+#aboutus .history {
+    grid-area: history;
+    font-family: 'Open Sans';
+    padding: 36px;
+    text-align: center;
+}
+
+#aboutus .practitioners {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "practitionerstitle practitionerstitle"
+        "practitionerone practitionerone"
+        "practitionertwo practitionertwo";
+    grid-area: practitioners;
+    background-color: var(--blue-bg-color);
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+#aboutus .practitioners .practitionerstitle {
+    grid-area: practitionerstitle;
+    font-family: Arial;
+    color: white;
+}
+
+#aboutus .practitioners .practitionerone {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "aboutimgone"
+        "abouttextone";
+    grid-area: practitionerone;
+}
+
+#aboutus .practitioners .practitioner {
+    font-family: 'Open Sans';
+    background-color: white;
+    margin: 8px 24px;
+    padding: 16px;
+}
+
+
+#aboutus .abouttextone {
+    grid-area: abouttextone;
+}
+
+#aboutus .practitioners .practitionerone .aboutimgone {
+    grid-area: aboutimgone;
+    text-align: center;
+}
+
+.practitionerimg {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid lightgray;
+}
+
+#aboutus .practitionertwo {
+    display: grid;
+    grid-auto-flow: row;
+    grid-area: practitionertwo;
+    font-family: 'Open Sans';
+}
+
+
+
+/*CONTACT PAGE STYLING - SPECIFICALLY FOR THIS PAGE ONLY*/
+
+#contact {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "navigation"
+        "contacttitle"
+        "contactform"
+        "footer";
+
+}
+
+.contacttitle {
+    grid-area: contacttitle;
+    font-family: Arial;
+    color: #FFFFFF;
+    background-color: #2D31FA;
+    text-align: center;
+}
+
+.contactform {
+    grid-area: contactform;
+    padding: 24px;
+}
+
+.submitrow {
+    text-align: center;
+}
+
+#submitbutton {
+    background-color: #2D31FA;
+    border-radius: 100px;
+    padding: 10px 16px;
+    font-size: 12px;
+    font-family: 'Open Sans';
+    color: white;
+    border: none;
+}
+
+#submitbutton:hover {
+    background-color: var(--hover-color);
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) {
+    .navigation .logoandmenu .img-inc-logo {
+        width: 40%;
+    }
+
+    .menuicon {
+        width: 30px;
+    }
+
+    .homepage .header {
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        grid-template-areas: "headertext headerimage";
+        padding: 36px 64px;
+        text-align: left;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .homepage .header .headerimage {
+        grid-area: headerimage;
+    }
+
+    .homepage .header .headerimage img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .homepage .header .headertext {
+        grid-area: headertext;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        margin-right: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .homepage .header .headertext h1 {
+        font-size: 48px;
+        color: black;
+        margin-bottom: 12px;
+    }
+
+    .homepage .header .headertext h2 {
+        font-size: 30px;
+        color: gray;
+        margin: 0;
+    }
+
+    .homepage .header .headertext .headerinfo {
+        padding: 0;
+        margin-top: 48px;
+    }
+
+    .homepage .header .headertext .headerinfo p {
+        font-size: 18px;
+    }
+
+    .homepage .features {
+        gap: 32px 32px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "featuresone featurestwo"
+            "featuresthree featuresfour";
+        margin: 64px;
+    }
+
+    .homepage .features .feature {
+        padding: 42px;
+    }
+
+    .homepage #servicescontainer {
+        padding: 12px 80px 80px 80px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "footerone footertwo footerthree";
+        margin-top: 48px;
+        padding: 48px;
+    }
+
+    .footer .footertwo {
+        text-align: center;
+    }
+}
+
+/* Deskop styles */
+@media only screen and (min-width: 992px) {
+    .homepage .header .headertext h1 {
+        font-size: 52px;
+    }
+
+    .homepage .header .headertext h2 {
+        font-size: 36px;
+    }
+
+    .homepage .header .headertext .headerinfo {
+        margin-top: 52px;
+    }
+
+    .homepage .header .headertext .headerinfo p {
+        font-size: 24px;
+    }
+
+    .homepage .features {
+        gap: 0px 24px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "featuresone featurestwo featuresthree featuresfour";
+        margin: 64px 48px;
+    }
+
+    .homepage #servicescontainer .services {
+        gap: 0 36px;
+        grid-auto-flow: row;
+        grid-template-areas: "serviceone servicetwo";
+        padding: 24px 48px;
+    }
+
+    .homepage #servicescontainer h2 {
+        font-size: 32px;
+    }
+
+    .homepage .serviceone {
+        background-color: #FFFFFF;
+        grid-area: serviceone;
+        font-size: 18px;
+    }
+
+    .homepage .servicetwo {
+        background-color: #FFFFFF;
+        grid-area: servicetwo;
+        font-size: 18px;
+    }
+
+    .homepage #servicescontainer .services .service {
+        padding: 48px;
+    }
+
+    .footer .footerone h5 {
+        font-size: 24px;
+    }
+
+    .footer .footertwo h5 {
+        font-size: 24px;
+    }
+
+    .footer .footertwo li {
+        font-size: 18px;
+    }
+
+    .footer .footerthree h5 {
+        font-size: 24px;
+    }
+
+    .footer .footerthree li {
+        font-size: 18px;
+    }
+
+    .footerone #incmed-text {
+        width: 80%;
+    }
+
+    .footerone #img-icon-phone {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+
+
+    .footerone #img-icon-email {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+
+    .footerone p {
+        font-size: 16px;
+    }
+
+    .footerone .button-footer {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "logoandmenu menuitems";
+    }
+
+    #menubutton {
+        display: none;
+    }
+
+    .navigation .logoandmenu {
+        grid-area: logoandmenu;
+    }
+
+    .navigation .logoandmenu .img-inc-logo {
+        width: 75%;
+    }
+
+    #menuitems {
+        grid-area: menuitems;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    #aboutus {
+        grid-template-areas:
+            "navigation navigation"
+            "title title"
+            "image history"
+            "practitioners practitioners"
+            "footer footer";
+    }
+
+    #aboutus .image-aboutus {
+        margin: 36px 0 36px 64px;
+    }
+
+    #img-aboutus {
+        height: 800px;
+        aspect-ratio: 4/5;
+    }
+
+    #aboutus .history {
+        margin: 36px 64px 36px 0;
+    }
+
+    #aboutus .history h2 {
+        font-size: 42px;
+    }
+
+    #aboutus .history p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    #aboutus .practitioners {
+        grid-template-areas:
+            "practitionerstitle practitionerstitle"
+            "practitionerone practitionertwo";
+        padding: 0 52px 36px 52px;
+    }
+
+    #aboutus .practitioners .practitioner {
+        margin: 8px 40px;
+        padding: 52px;
+    }
+
+    .practitionerimg {
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        border-width: 2px;
+    }
+
+    .abouttext {
+        font-size: 18px;
+    }
+
+    .contactform {
+        padding: 80px;
+        font-size: 24px;
+    }
+
+    .contactform-fieldset {
+        padding: 8px 48px;
+    }
+
+    textarea,
+    input {
+        font-size: 24px;
+    }
+
+    textarea::placeholder {
+        font-size: 24px;
+    }
+
+    #submitbutton {
+        padding: 16px 20px;
+        font-size: 20px;
+    }
+}

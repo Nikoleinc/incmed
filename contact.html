@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Incmed Contacts</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="incmed-stylesheet.css" rel="stylesheet" />
+
+    <!-- Favicon
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+
+<body id="contact">
+    <div class="navigation">
+        <div class="logoandmenu">
+            <a href="./index.html">
+                <img class="img-inc-logo" src="./incmed-logo/inc-logotext.png" alt="company logo & text">
+            </a>
+            <div id="menubutton">
+                <a onclick="onMenuClick()">
+                    <img class="menuicon" src="./incmed-icons/menu.png">
+                </a>
+            </div>
+            <!-- <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by feen - Flaticon</a> -->
+        </div>
+        <menu id="menuitems">
+            <li><a href="./index.html">Home</a></li>
+            <!--anchor link to top of home -->
+
+            <li><a href="./index.html#servicescontainer">Services</a></li>
+            <!--anchor link to service section??  -->
+
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </menu>
+    </div>
+
+
+    <div class="contacttitle">
+        <h1>Contact Us</h1>
+    </div>
+
+
+    <div class="contactform">
+        <form action="https://formsubmit.co/nikoleinc10@gmail.com" onsubmit="submitForm()" method="POST">
+            <fieldset class="contactform-fieldset">
+                <legend>MAKE AN APPOINTMENT / QUERY</legend>
+                <br>
+
+                <span>Select a Service/s:</span><br>
+                <input type="checkbox" id="wounddressing" name="wounddressing" value="Wound Dressing">
+                <label for="wounddressing"> Wound Dressing</label><br>
+
+                <input type="checkbox" id="woundundressing" name="woundundressing" value="Wound Undressing">
+                <label for="woundundressing"> Wound Undressing</label><br>
+
+                <input type="checkbox" id="sutureremoval" name="sutureremoval" value="Suture Removal">
+                <label for="sutureremoval"> Suture Removal</label><br>
+
+
+                <input type="checkbox" id="staplesremoval" name="staplesremoval" value="Staples Removal">
+                <label for="staplesremoval"> Staples Removal</label><br>
+                <br>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="phonenumber">Phone Number:</label>
+                <input type="text" id="phonenumber" name="phonenumber"><br><br>
+
+                <textarea id="message" name="message" rows="10" cols="50" placeholder="Your message here..."></textarea>
+                <br>
+                <br>
+                <div class="submitrow">
+                    <input id="submitbutton" type="submit">
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+
+
+    <div class="footer">
+        <!--footer one-->
+        <div class="footerone">
+            <img id="incmed-text" src="./incmed-logo/inc-text.png" alt="incmed text logo">
+            <p class="contactdetails">
+                <span class="contactdetails-img">
+                    <img id="img-icon-phone" src="./incmed-icons/phone-call.png" alt="phone icon">
+                </span>
+                <span>(089) 238 5521</span>
+            </p>
+            <p class="contactdetails">
+                <span class="contactdetails-img">
+                    <img id="img-icon-email" src="./incmed-icons/email.png" alt="email icon">
+                </span>
+                <span>maricarfrit@yahoo.ie</span>
+            </p>
+
+            <!--appointment button -->
+            <button class="button-footer" type="button">
+                <a href="./contact.html">APPOINTMENT</a>
+            </button>
+
+
+        </div>
+
+        <!--footer three-->
+        <div class="footertwo">
+            <h5>LINKS</h5>
+            <ul class="links">
+                <li><a href="./index.html">Home</a></li>
+                <!--anchor link to top of home -->
+
+                <li><a href="./index.html#servicescontainer">Services</a></li>
+                <!--anchor link to service section??  -->
+
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <!--footer three-->
+        <div class="footerthree">
+            <h5>OPENING HOURS</h5>
+
+            <ul class="openinghours">
+                <li>
+                    <p>Monday - Friday</p>
+                    <p>10:00am - 4:30pm</p>
+                </li>
+                <!--anchor link to top of home -->
+
+                <li>
+                    <p>Saturday</p>
+                    <p>10:00am - 5:30pm</p>
+                </li>
+                <!--anchor link to service section??  -->
+
+                <li>
+                    <p>Sunday</p>
+                    <p>Closed</p>
+                </li>
+            </ul>
+        </div>
+
+        <script src="./index.js"></script>
+</body>
