@@ -10,7 +10,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Open Sans";
-    -webkit-tap-highlight-color: white;
+    background-color: white;
 }
 
 /* navigation style */
