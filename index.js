@@ -12,7 +12,8 @@ function onMenuClick() {
 
 /* FUNCTION: to alert user when form is submitted - see document for all the references */
 function submitForm() {
-    const wounddressing = document.getElementById("wounddressing").checked;  //declaring variable using constant
+    //declaring variables using constant
+    const wounddressing = document.getElementById("wounddressing").checked;
     const woundundressing = document.getElementById("woundundressing").checked;
     const sutureremoval = document.getElementById("sutureremoval").checked;
     const staplesremoval = document.getElementById("staplesremoval").checked;
@@ -23,7 +24,9 @@ function submitForm() {
     const message = document.getElementById("message").value;
 
 
+
     let formtext = "Services selected:\n"; //declaring variable using let 
+    // add string to variable
     if (wounddressing) {
         formtext = formtext + "- Wound Dressing\n";
     }
